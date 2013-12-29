@@ -1,7 +1,7 @@
 {
-  "name": "angularjs-seed",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "name": "angular-shop-demo",
+  "description": "Demo shop application with AngularJS",
+  "repository": "https://github.com/qza/angular-shop-demo",
   "devDependencies": {
     "phantomjs": "~1.9",
     "karma": "~0.10.4",
