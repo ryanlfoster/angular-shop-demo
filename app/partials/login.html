@@ -1,0 +1,40 @@
+<div class="container-fluid">
+
+    <div class="row-fluid">
+
+        <div class="span4" ng-cloak>
+            <div class="row-fluid">
+                <span class="span2">
+                </span>
+                <span class="span6">
+                    DIMOCO Demo shop
+                    <img src="img/phones/dell-streak-7.0.jpg" />
+                </span>
+            </div>
+        </div>
+
+        <div class="span2" ng-cloak>
+
+            <languagebar></languagebar>
+
+            <form name="loginForm">
+                <div class="control-group" ng-class="{error: loginForm.username.$invalid}">
+                    <label>Username</label>
+                    <input type="text" name="username" ng-model="username" required>
+                    <span ng-show="loginForm.username.$error.required" class="help-inline">
+                        Required</span>
+                </div>
+                <div class="control-group" ng-class="{error: loginForm.password.$invalid}">
+                    <label>Password</label>
+                    <input type="password" name="password" ng-model="password" required>
+                    <span ng-show="loginForm.password.$error.required" class="help-inline">
+                        Required</span>
+                </div>
+                <br>
+                <button ng-click="login()" ng-disabled="loginForm.$invalid"
+                        class="btn btn-primary">Login</button>
+            </form>
+
+        </div>
+    </div>
+</div>

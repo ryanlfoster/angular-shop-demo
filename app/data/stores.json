@@ -1,0 +1,147 @@
+{
+    "1": {
+        "id": "1",
+        "name": "Giftly",
+        "description": "Giftly super online shop",
+        "imageUrl": "img/phones/dell-streak-7.0.jpg",
+        "products": [
+            {
+                "name": "Lamp",
+                "description": "bla bla bla",
+                "price": "123.53",
+                "imageUrl": "img/phones/motorola-atrix-4g.0.jpg"
+            },
+            {
+                "name": "Knife",
+                "description": "bla bla bla",
+                "price": "23.10",
+                "imageUrl": "img/phones/dell-streak-7.0.jpg"
+            },
+            {
+                "name": "Laser pointer",
+                "description": "bla bla bla",
+                "price": "73.44",
+                "imageUrl": "img/phones/lg-axis.0.jpg"
+            },
+            {
+                "name": "Laser BIG",
+                "description": "bla bla bla",
+                "price": "70.44",
+                "imageUrl": "img/phones/lg-axis.0.jpg"
+            },
+            {
+                "name": "Laser SMALL",
+                "description": "bla bla bla",
+                "price": "20.44",
+                "imageUrl": "img/phones/lg-axis.0.jpg"
+            },
+            {
+                "name": "Swimming shorts",
+                "description": "bla bla bla",
+                "price": "20.44",
+                "imageUrl": "img/phones/lg-axis.0.jpg"
+            },
+            {
+                "name": "Compass",
+                "description": "bla bla bla",
+                "price": "50.00",
+                "imageUrl": "img/phones/lg-axis.0.jpg"
+            },
+            {
+                "name": "Bottle of wine",
+                "description": "bla bla bla",
+                "price": "150.00",
+                "imageUrl": "img/phones/lg-axis.0.jpg"
+            },
+            {
+                "name": "Plastic flowers",
+                "description": "bla bla bla",
+                "price": "250.00",
+                "imageUrl": "img/phones/lg-axis.0.jpg"
+            }
+        ]
+    },
+    "2": {
+        "id": "2",
+        "name": "Apple",
+        "description": "Apple mobile phones and equipment",
+        "imageUrl": "img/phones/dell-streak-7.0.jpg",
+        "products": [
+            {
+                "name": "IPhone4s",
+                "description": "bla bla bla",
+                "price": "150.00",
+                "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg"
+            },
+            {
+                "name": "IPhone5",
+                "description": "bla bla bla",
+                "price": "200.00",
+                "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg"
+            },
+            {
+                "name": "IPhone5s",
+                "description": "bla bla bla",
+                "price": "300.00",
+                "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg"
+            },
+            {
+                "name": "IPhone6s",
+                "description": "bla bla bla",
+                "price": "400.00",
+                "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg"
+            },
+            {
+                "name": "IPhone7s",
+                "description": "bla bla bla",
+                "price": "500.00",
+                "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg"
+            },
+            {
+                "name": "IPhone8s",
+                "description": "bla bla bla",
+                "price": "600.00",
+                "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg"
+            },
+            {
+                "name": "IPhone9s",
+                "description": "bla bla bla",
+                "price": "700.00",
+                "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg"
+            }
+            
+        ]
+    },
+    "3": {
+        "id": "3",
+        "name": "Nike",
+        "description": "Nike sports for champions",
+        "imageUrl": "img/phones/dell-streak-7.0.jpg",
+        "products": [
+            {
+                "name": "Sport women green",
+                "description": "bla bla bla",
+                "price": "45.20",
+                "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg"
+            },
+            {
+                "name": "Mens black double knot",
+                "description": "bla bla bla",
+                "price": "60.00",
+                "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg"
+            },
+            {
+                "name": "Mens runners ONE",
+                "description": "bla bla bla",
+                "price": "160.00",
+                "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg"
+            },
+            {
+                "name": "Mens runners TWO",
+                "description": "bla bla bla",
+                "price": "260.00",
+                "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg"
+            }
+        ]
+    }
+}

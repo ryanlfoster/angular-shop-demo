@@ -1,0 +1,17 @@
+{
+  "home": {
+    "title": "Home",
+    "content": "This is the shop home page.",
+    "href": "#/stores"
+  },
+  "about": {
+    "title": "About",
+    "content": "Details about the application.",
+    "href": "#/about"
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "Contact DIMOCO for more details.",
+    "href": "#/contact"
+  }
+}
