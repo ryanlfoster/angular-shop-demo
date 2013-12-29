@@ -1,40 +1,31 @@
-<div class="container-fluid">
-
-    <div class="row-fluid">
-
-        <div class="span4" ng-cloak>
-            <div class="row-fluid">
-                <span class="span2">
-                </span>
-                <span class="span6">
-                    DIMOCO Demo shop
-                    <img src="img/phones/dell-streak-7.0.jpg" />
-                </span>
-            </div>
+<div class="jumbotron">
+    <h1>DIMOCO shop</h1>
+    <p>Application integration with DIMOCO payment services</p>
+    <p></p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-md-3 hidden-xs">
+            <img src="http://www.dimoco.at/fileadmin/content/2012/slider/ipad.png" />
         </div>
-
-        <div class="span2" ng-cloak>
-
-            <languagebar></languagebar>
-
+        <div class="col-xs-6 col-md-3">
             <form name="loginForm">
-                <div class="control-group" ng-class="{error: loginForm.username.$invalid}">
-                    <label>Username</label>
-                    <input type="text" name="username" ng-model="username" required>
-                    <span ng-show="loginForm.username.$error.required" class="help-inline">
-                        Required</span>
+                <div class="form-group">
+                    <label for="username">Language</label>
+                    <languagebar></languagebar>
                 </div>
-                <div class="control-group" ng-class="{error: loginForm.password.$invalid}">
-                    <label>Password</label>
-                    <input type="password" name="password" ng-model="password" required>
-                    <span ng-show="loginForm.password.$error.required" class="help-inline">
-                        Required</span>
+                <div class="form-group" ng-class="{error: loginForm.username.$invalid}">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" placeholder="Enter username" name="username" ng-model="username" required>
+                </div>
+                <div class="form-group" ng-class="{error: loginForm.password.$invalid}">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" placeholder="Enter password" name="password" ng-model="password" required>
                 </div>
                 <br>
-                <button ng-click="login()" ng-disabled="loginForm.$invalid"
-                        class="btn btn-primary">Login</button>
+                <a ng-click="login()" ng-disabled="loginForm.$invalid" class="btn btn-primary btn-lg" role="button">Login</a>
+                <a ng-click="register()" class="btn btn-success btn-lg" role="button">Register</a>
             </form>
-
         </div>
-    </div>
+    </div>  
 </div>
