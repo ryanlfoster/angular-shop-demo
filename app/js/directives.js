@@ -10,7 +10,7 @@ appDirectives.directive('menu', function() {
         transclude: true,
         scope: {},
         controller: function($scope, $rootScope) {
-            $scope.items = $rootScope.menuitems;
+            $scope.menuitems = $rootScope.menuitems;
         },
         templateUrl: 'partials/components/menu.html',
         replace: true

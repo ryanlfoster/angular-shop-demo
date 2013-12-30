@@ -1,25 +1,25 @@
-<div class="container-fluid">
-    <div class="row-fluid">
-        <span class="icon-shopping-cart"></span> Cart </br>
+<div class="container">
+    <div class="row">
+        <span class="glyphicon-shopping-cart"></span> Cart </br>
         <div> Currently {{incartsize()}} different products in cart </div>
     </div>
-    <div class="row-fluid" ng-repeat="product in incart">
-        <div class="span5">
+    <div class="row" ng-repeat="product in incart">
+        <div class="col-md-1">
             {{product.name}}
         </div>
-        <div class="span1">
+        <div class="col-md-1">
             {{product.quantity}}
         </div>
-        <div class="span3">
+        <div class="col-md-1">
             {{product.price | currency }}
         </div>
-        <div class="span3">
+        <div class="col-md-1">
             <a href ng-click="removeCartItem($index)">
-                <span class="icon-remove"></span>
+                <span class="glyphicon-remove"></span>
             </a>
         </div>
    </div>
-    <div class="row-fluid">
+    <div class="row">
         <div>Total: {{incartvalue() | currency }} </div>
         </br>
         <div><button ng-click='checkoutCart()'>Checkout</button></div>
