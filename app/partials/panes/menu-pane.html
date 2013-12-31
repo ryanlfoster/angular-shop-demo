@@ -10,15 +10,13 @@
             </button>
             <a class="navbar-brand" href="#">{{appname}}</a>
         </div>
-
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li ng-repeat="item in menuitems">
                     <a href="{{item.href}}">{{item.title}}</a>
                 </li>
             </ul>
-           
-            <languagebar class="navbar-form navbar-right"></languagebar>
+            <languagebarmenu class="nav navbar-nav navbar-right"></languagebarmenu>
             <userpane class="nav navbar-nav navbar-right"></userpane>
         </div>
     </nav>

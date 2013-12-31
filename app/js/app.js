@@ -3,6 +3,7 @@
 /* App Module */
 
 var app = angular.module('app', [
+    'ui.bootstrap',
     'ngRoute',
     'appAnimations',
     'appDirectives',
@@ -11,7 +12,7 @@ var app = angular.module('app', [
     'appServices'
 ]);
 
-app.value('appname', 'Dimoco shop');
+app.value('appname', 'Dimoco');
 app.constant('version', '0.1');
 
 app.config(['$routeProvider',

@@ -59,6 +59,29 @@ appDirectives.directive('languagebar', function() {
     };
 });
 
+appDirectives.directive('languagebarmenu', function() {
+    return {
+        restrict: 'E',
+        scope: {},
+        controller: function($scope, $locale, $location, $log) {
+            $scope.languages = [
+                {code: 'en-us', name: 'English'},
+                {code: 'fr-fr', name: 'French'},
+                {code: 'de-de', name: 'German'},
+                {code: 'sr-sr', name: 'Serbian'}
+            ];
+            $scope.language = $scope.languages[0];
+            $scope.changelocale = function() {
+                $locale.id = $scope.language.code;
+                $log.info('Locale changed to: ' + $locale.id);
+                $location.path('/');
+            };
+        },
+        templateUrl: 'partials/components/langselect_menu.html',
+        replace: true
+    };
+});
+
 appDirectives.directive('cart', function() {
     return {
         restrict: 'E',
