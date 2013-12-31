@@ -68,6 +68,9 @@ appDirectives.directive('cart', function() {
             $scope.incartsize = function() {
                 return $scope.incart.length;
             };
+            $scope.hasitems = function() {
+                return $scope.incartsize() > 0;
+            };
             $scope.incartvalue = function() {
                 var sum = 0;
                 for (var i=0; i < $scope.incart.length; i++) {
@@ -93,6 +96,9 @@ appDirectives.directive('cart', function() {
                     $scope.incart.splice(index, 1);
                 }
             };
+            $scope.emptyCart = function() {
+                $scope.incart = [];
+            };
             $scope.checkoutCart = function() {
                 $window.alert("Checkout cart!");
             };
@@ -107,6 +113,19 @@ appDirectives.directive('cart', function() {
             };
         },
         templateUrl: 'partials/components/cart.html',
+        replace: true
+    };
+});
+
+appDirectives.directive('search', function() {
+    return {
+        restrict: 'E',
+        transclude: true,
+        scope: {},
+        controller: function($scope, $rootScope) {
+            $scope.searchstring = $rootScope.searchstring;
+        },
+        templateUrl: 'partials/components/search.html',
         replace: true
     };
 });

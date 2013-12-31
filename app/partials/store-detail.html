@@ -1,34 +1,28 @@
 <div class="container">
     <div ng-include src="'partials/panes/menu-pane.html'" ng-cloak></div>
     <div class="row">
-        </br>
-    </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-3" ng-cloak>
-            <cart></cart>
-        </div>
-        <div class="col-xs-9 col-md-6 col-lg-6" ng-cloak>
-            <div class="container">
-                <div class="row" >
-                    <p>
-                        <b>{{store.name}}</b>
-                        <b>{{store.description}}</b>
-                    </p>
+        <cart></cart>
+        <!--<search></search>-->
+        <div class="col-md-9" ng-cloak>
+            <div class="panel panel-default">
+                <div class="panel-heading">{{store.name}}</div>
+                <div class="panel-body">
+                    {{store.description}}
                 </div>
-                <div class="row">
-                    <div ng-repeat="product in store.products" class="col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <img ng-src="{{product.imageUrl}}" class="img-thumbnail" style="width:300px; height: 200px;"/>
-                                <h3>{{product.name}}</h3>
-                                <p>{{product.description}}</p>
-                                <p><a href ng-click="addToCart(product)" class="btn btn-primary" role="button">Add to cart</a></p>
-                            </div>
+            </div>
+            <div class="row">
+                <div ng-repeat="product in store.products" class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <img ng-src="{{product.imageUrl}}" class="img-thumbnail" />
+                            <h3>{{product.name}}</h3>
+                            <p>{{product.description}}</p>
+                            <p><a href ng-click="addToCart(product)" class="btn btn-primary" role="button">Add to cart</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
 </div>
 

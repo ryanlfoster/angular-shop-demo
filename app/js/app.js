@@ -46,4 +46,5 @@ app.run(['$rootScope', 'appname', 'version',
     function($rootScope, appname, version) {
         $rootScope.appname = appname;
         $rootScope.version = version;
+        $rootScope.searchstring = '';
     }]);

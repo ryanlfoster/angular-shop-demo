@@ -16,6 +16,14 @@ li.cart-item {
   border: 1px solid white;  
 }
 
+div.cart-pane {
+    
+}
+
+p.shop-description {
+  min-height: 40px;
+}
+
 li.cart-item:hover {
   border: 1px solid red;  
 }
