@@ -20,6 +20,11 @@ div.cart-pane {
     
 }
 
+form.search-form {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
 p.shop-description {
   min-height: 40px;
 }

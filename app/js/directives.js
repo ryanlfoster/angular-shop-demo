@@ -144,11 +144,31 @@ appDirectives.directive('search', function() {
     return {
         restrict: 'E',
         transclude: true,
-        scope: {},
+        scope: {
+            searchtitle: '=searchtitle'
+        },
         controller: function($scope, $rootScope) {
             $scope.searchstring = $rootScope.searchstring;
         },
         templateUrl: 'partials/components/search.html',
         replace: true
     };
+});
+
+app.directive('focusOn', function() {
+   return function(scope, elem, attr) {
+      scope.$on('focusOn', function(e, name) {
+        if(name === attr.focusOn) {
+          elem[0].focus();
+        }
+      });
+   };
+});
+
+app.factory('focus', function ($rootScope, $timeout) {
+  return function(name) {
+    $timeout(function (){
+      $rootScope.$broadcast('focusOn', name);
+    });
+  };
 });

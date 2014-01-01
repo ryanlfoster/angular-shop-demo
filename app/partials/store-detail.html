@@ -1,19 +1,21 @@
 <div class="container">
     <div ng-include src="'partials/panes/menu-pane.html'" ng-cloak></div>
     <div class="row">
-        <cart></cart>
-        <!--<search></search>-->
+        <div class="col-md-3" ng-cloak>
+            <div class="cart-pane">
+                <cart></cart>
+            </div>
+        </div>
         <div class="col-md-9" ng-cloak>
-            <div class="panel panel-default">
+            <div class="panel panel-info hidden-xs">
                 <div class="panel-heading">
-                    <h3>{{store.name}}</h3>
-                </div>
-                <div class="panel-body">
-                    {{store.description}}
+                    <h3 class="hidden-sm">{{store.name}} <small> {{store.description}} </small></h3>
+                    <h4 class="hidden-md hidden-lg">{{store.name}} <small> {{store.description}} </small></h4>
                 </div>
             </div>
+            <search></search>
             <div class="row">
-                <div ng-repeat="product in store.products" class="col-sm-6 col-md-4">
+                <div ng-repeat="product in store.products" class="col-xs-6 col-sm-4 col-md-4">
                     <div class="thumbnail">
                         <div class="caption">
                             <img ng-src="{{product.imageUrl}}" class="img-thumbnail" />

@@ -1,13 +1,14 @@
 <div class="container">
     <div ng-include src="'partials/panes/menu-pane.html'" ng-cloak></div>
     <div class="row">
-        <cart></cart>
-        <!--<search></search>-->
+        <div class="col-md-3" ng-cloak>
+            <div class="cart-pane">
+                <cart></cart>
+            </div>
+        </div>
         <div class="col-md-9" ng-cloak>
+            <search></search>
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    Available stores
-                </div>
                 <div class="panel-body">
                     <div class="col-xs-6 col-md-4" ng-repeat="store in stores| filter:query | orderBy:orderProp">
                         <a href="#/stores/{{store.id}}">

@@ -1,21 +1,6 @@
-<div class="col-md-3" ng-cloak>
-    <div class="panel panel-default">
-        <div class="panel-body">
-            
-             <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                     <input ng-model="searchstring" type="text" class="form-control te" placeholder="Search">
-                </div>
-                <a href ng-click="fullsearch()" class="btn btn-default">Go</a>
-            </form>
-            
-            
-<!--            <form class="navbar-form navbar-left" role="search">
-                <div>
-                    <input ng-model="searchstring" type="text" class="form-control pull-left" placeholder="Search">
-                    <a href ng-click="fullsearch()" class="btn btn-default pull-right">Go</a>
-                </div>
-            </form>-->
-        </div>
+<form class="navbar-form search-form" role="search">
+    <div class="input-group">
+        <input ng-model="searchstring" type="text" class="form-control" placeholder="Search products">
+        <a href ng-click="fullsearch()" class="btn input-group-btn input-group-addon">Search</a>
     </div>
-</div>
+</form>

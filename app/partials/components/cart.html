@@ -1,38 +1,44 @@
-<div class="col-md-3" ng-cloak>
-    <div class="cart-pane">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <span class="glyphicon glyphicon-shopping-cart"></span>
-                <span class="label label-primary">Cart</span>
-                <span class="badge pull-right">Total: {{incartvalue() | currency}}</span>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <span class="label label-primary">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            Cart
+        </span>
+        <button type="button" ng-disabled="!hasitems()" ng-click='checkoutCart()' class="btn-xs pull-right hidden-sm hidden-md hidden-lg">
+            Checkout
+        </button>
+        <span class="label label-primary pull-right" style="min-height: 21px;">
+            Total:
+            <span class="glyphicon">
+                {{incartvalue() | currency}}
+            </span>
+        </span>
+    </div>
+    <div class="panel-body hidden-xs hidden-sm">
+        <div>
+            <div class="alert alert-warning" ng-show="!hasitems()">
+                <strong>Hey!</strong> Cart is empty. Add some products into!
             </div>
-            <div class="panel-body">
-                <div>
-                    <div class="alert alert-warning" ng-show="!hasitems()">
-                        <strong>Hey!</strong> Cart is empty. Add some products into!
-                    </div>
-                </div>
-                <table class="table table-hover">
-                    <tr ng-repeat="product in incart">
-                        <td><span class="pull-left">{{product.name}}</span></td>
-                        <td>{{product.quantity}}</td>
-                        <td>{{product.price| currency }}</td>
-                        <td>
-                            <a href ng-click="removeCartItem($index)">
-                                <span class="glyphicon glyphicon-remove"></span>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-                <div>
-                    <button type="button" ng-disabled="!hasitems()" ng-click='emptyCart()' class="btn btn-warning">
-                        <span class="glyphicon glyphicon-remove-sign"></span> Empty
-                    </button>
-                    <button type="button" ng-disabled="!hasitems()" ng-click='checkoutCart()' class="btn btn-default pull-right">
-                        <span class="glyphicon glyphicon-credit-card"></span> Checkout
-                    </button>
-                </div>
-            </div>
+        </div>
+        <table class="table table-hover">
+            <tr ng-repeat="product in incart">
+                <td style="min-width: 100px;"><span class="pull-left">{{product.name}}</span></td>
+                <td>{{product.quantity}}</td>
+                <td>{{product.price| currency }}</td>
+                <td>
+                    <a href ng-click="removeCartItem($index)">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <button type="button" ng-disabled="!hasitems()" ng-click='emptyCart()' class="btn btn-warning">
+                <span class="glyphicon glyphicon-remove-sign"></span> Empty
+            </button>
+            <button type="button" ng-disabled="!hasitems()" ng-click='checkoutCart()' class="btn btn-default pull-right">
+                <span class="glyphicon glyphicon-credit-card"></span> Checkout
+            </button>
         </div>
     </div>
 </div>
